@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
-import 'package:navigation/ComponentsScreen.dart';
+
+import 'components_list_screen.dart';
 
 
 class HomeScreen extends StatelessWidget {
@@ -32,14 +33,15 @@ class HomeScreen extends StatelessWidget {
             ElevatedButton(
               style: ElevatedButton.styleFrom(
                 minimumSize: Size(400, 50), // Làm nút dài hơn (400px x 50px)
+                backgroundColor : Colors.blue,
               ),
               onPressed: () => Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => ComponentsScreen()),
+                MaterialPageRoute(builder: (context) => ComponentListScreen()),
               ),
               child: Text(
                 "I'm ready",
-                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.white),
               ),
 
 
